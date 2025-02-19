@@ -20,7 +20,6 @@ BIG STORE/
 - **JSON** used for product data management
 - Simple and clean code structure for easy customization
 
-
 ## 📦 Installation
 1. Clone the repository:
    ```sh

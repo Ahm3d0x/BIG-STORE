@@ -49,7 +49,7 @@ let newpass = document.querySelector('.newpass')
 let oldpass = document.querySelector('.oldpass')
 let userpass = document.querySelector('.userpass')
 let sarial = document.querySelector('.sarial');
-let activeapp = document.querySelector('.activeapp')
+// let activeapp = document.querySelector('.activeapp')
 let add_customers = document.querySelector('.add_customers')
 let customers = document.querySelector('.customers')
 let ptn_customer = document.querySelector('.ptn_customer')
@@ -103,7 +103,7 @@ let dad;
 let dad1;
 let x;
 let vx;
-let activecode = '2005211a7medattia'
+let activecode = ''
 if (localStorage.user == null || localStorage.passw == null) {
     localStorage.user = 'admin'
     localStorage.passw = 'admin'
@@ -140,7 +140,7 @@ function vchang() {
 let user = localStorage.user;
 let passw = localStorage.passw;
 if (user == 'admin' && passw == 'admin') {
-    activeapp.style.display = 'block'
+    // activeapp.style.display = 'block'
     login.style.display = 'none '
 } else {
     login.style.display = 'block'
@@ -148,13 +148,14 @@ if (user == 'admin' && passw == 'admin') {
 }
 
 function active() {
-    if (sarial.value == activecode) {
+    // if (sarial.value == activecode) {
         login.style.display = 'block'
-        activeapp.style.display = 'none'
-    } else {
-        alert('تواصل مع المطور للحصول علي  كود التفعيل')
-    }
+        // activeapp.style.display = 'none'
+    // } else {
+    //     alert('تواصل مع المطور للحصول علي  كود التفعيل')
+    // }
 }
+active() 
 let w1 = document.querySelector('.w1')
 let k8 = document.querySelector('.k8')
 window.onscroll = function() {
